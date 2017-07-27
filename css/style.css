@@ -113,7 +113,99 @@ img {
   Media Queries
 ==================================== */
 
+@media (min-width: 769px) and (max-width: 1023px){
+    
+    .clear::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+    
+    .main-header {
+        height: 36px;
+    }
+    
+    .name a, 
+    .main-nav li a {
+       padding: 5px;
+    }
+}
+
+
 @media (min-width: 769px) {
+    h1 {
+        margin: 0 !important;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    
+    .name {
+        width: 50%;
+        float: left;
+    }
+    .name, 
+    .name a {
+        font-size: 0.95em;
+        display: inline-block;
+        text-align: left;
+        font-size: 15.2px;
+    }
+    
+    .name a {
+         border: 1px solid transparent;
+    }
+    
+    .main-nav  {
+        float: right;
+    }
+    
+    .main-nav li {
+        display: inline-block;
+    }
+    
+    .feat-img {
+        width: 100%;
+        padding: 15px;
+        border: 1px slid #d9e4ea;
+    }
+    
+     .col {
+        padding: 20px 25px 0;
+        margin-bottom: 10px;
+    }
+     
+    .secondary,
+    .primary 
+    {
+        width: 50%;
+    }
+    
+    .primary {
+        float: right;
+    }
+    
+    .secondary {
+        float: left;
+    }
+    
+
+    
+   
+
+	/* ---- Float clearfix ---- */
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1024px) {
     h1 {
         margin: 0 !important;
     }
@@ -189,3 +281,4 @@ img {
 	}
 
 }
+
